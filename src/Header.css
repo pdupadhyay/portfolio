@@ -1,0 +1,12 @@
+.Header{
+    padding: 20px;
+}
+
+.ProfilePic{
+    width: 110px;
+    height: 195px;
+}
+
+.header-name{
+    text-decoration: none;
+}
