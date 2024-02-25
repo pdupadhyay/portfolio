@@ -22,6 +22,17 @@
 
 .nav-list-content{
     font-size: large;
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav-list-content li:hover{
+    scale:1.3;
+    transition: 0.5s ease-in;
+}
+
+.nav-list-content li a.active{
+    color: darkgray;
 }
 
 .main-content{

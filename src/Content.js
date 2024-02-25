@@ -1,5 +1,6 @@
 import { SocialIcon } from 'react-social-icons';
 import './Content.css';
+import { useState } from 'react';
 
 const projects =[
   {
@@ -104,6 +105,7 @@ function SkillLevel(skilllevel) {
 }
 
 function Content() {
+  const [active, setActive] = useState(null);
     return (
       <div className='Content'>
         <nav className="nav-bar">
@@ -111,11 +113,11 @@ function Content() {
                 <h2>On this Page</h2>
                 <hr></hr>
                 <ul className='nav-list-content'>
-                  <li><a href='#about'>About</a></li>
-                  <li><a href='#skills'>Skills</a></li>
-                  <li><a href='#education'>Education</a></li>
-                  <li><a href='#experience'>Experience</a></li>
-                  <li><a href='#projects'>Projects</a></li>
+                  <li><a  className={active === "about"?'active': ''} onClick={() => setActive('about')} href='#about'>About</a></li>
+                  <li><a  className={active === "skills"?'active': ''} onClick={() => setActive('skills')} href='#skills'>Skills</a></li>
+                  <li><a  className={active === "education"?'active': ''} onClick={() => setActive('education')} href='#education'>Education</a></li>
+                  <li><a  className={active === "experience"?'active': ''} onClick={() => setActive('experience')} href='#experience'>Experience</a></li>
+                  <li><a  className={active === "projects"?'active': ''} onClick={() => setActive('projects')} href='#projects'>Projects</a></li>
                 </ul>
             </div>
         </nav>
@@ -134,13 +136,11 @@ function Content() {
             </div>
             <div id='skills' className='section'>
               <h1>Skills</h1>
-              <p className='section-content'>
-                <ul>
+                <ul className='section-content'>
                 {skills.map((skill) => (
                     <li><strong>{skill.name}</strong> : <SkillLevel skilllevel={skill.level}></SkillLevel></li>
                 ))}
                 </ul>
-              </p>
             </div>
             <div id='education' className='section'>
               <h1>Education</h1>
