@@ -151,31 +151,30 @@ function Content() {
             </div>
             <div id='experience' className='section'>
               <h1>Experience</h1>
-
+              <ul className='section-content'>
               {experience.map((experience) => (
-                <ul className='section-content'>
                   <li>
                     <h3>{experience.companyName}</h3>
                     <h4><i>{experience.position}</i></h4>
                     <p>{experience.jobDescription}</p>
                   </li>
-                </ul>
               ))}
+              </ul>
 
             </div>
             <div id='projects' className='section'>
               <h1>Projects</h1>
 
+              <ul className='section-content'>
               {projects.map((project) => (
-                <ul className='section-content'>
                   <li>
                     <a href={project.url} target='_blank' rel="noreferrer">{project.name}</a>
                     <p className='section-content'>
                       {project.description}
                     </p>
                   </li>
-                </ul>
               ))}
+              </ul>
 
             </div>
         </div>
