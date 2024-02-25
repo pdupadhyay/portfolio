@@ -1,4 +1,3 @@
-import { SocialIcon } from 'react-social-icons';
 import './Content.css';
 import { useState } from 'react';
 
