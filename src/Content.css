@@ -18,12 +18,15 @@
     position: sticky;
     top:0;
     padding: 10px;
+
+    h2{
+        text-align: center;
+    }
 }
 
 .nav-list-content{
     font-size: large;
     list-style-type: none;
-    text-align: center;
 }
 
 .nav-list-content li:hover{
@@ -33,6 +36,7 @@
 
 .nav-list-content li a.active{
     color: darkgray;
+    font-size: 25px;
 }
 
 .main-content{
