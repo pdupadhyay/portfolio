@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import upSkilled from '../Content/UpSkilled.jpeg';
 import smartCam from '../Content/SmartCam.png';
+import rideShare from '../Content/RideShare.jpeg';
 
 interface ProjectProps {
   title: string;
@@ -65,7 +66,7 @@ const ProjectsSection = () => {
       title: "Ride Share Application",
       description: "A full-stack ride-sharing platform developed with React Native and Firebase, supporting real-time location tracking.",
       code: "https://github.com/Nitss10/ride-sharing-frontend",
-      imageUrl: smartCam
+      imageUrl: rideShare
     }
   ];
 
