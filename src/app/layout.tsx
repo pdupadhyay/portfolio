@@ -1,22 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Components/Navbar";
-import React from "react";
 import Script from "next/script";
 
-const geistSans = Geist({
+const geistSans = Inter({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
+const geistMono = Roboto_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Pradyumna Upadhyay",
+  title: "Pradyumna Upadhyay | Full Stack Developer",
   description: "Full Stack Developer | Software Engineering Master's Student",
   icons: {
     icon: '/Logo.png',
@@ -29,9 +28,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
-
+        {/* Favicon */}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
