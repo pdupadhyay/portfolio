@@ -108,7 +108,7 @@ const ProjectsSection = () => {
       title: "UpSkilled LMS",
       description: "A learning management system built with React and Node.js, featuring course management and progress tracking.",
       url: "https://upskilled.vercel.app",
-      code: "https://github.com/hiren1407/UpSkilled-Frontend",
+      code: "https://github.com/pdupadhyay/UpSkilled-Frontend",
       imageUrl: upSkilled,
       technologies: ["React", "Node.js", "MongoDB", "Express", "AWS S3"]
     },
