@@ -3,6 +3,8 @@ import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Components/Navbar";
 import Script from "next/script";
+import AnimatedBackground from "./Components/AnimatedBackground";
+import EasterEgg from './Components/EasterEgg';
 
 const geistSans = Inter({
   variable: "--font-geist-sans",
@@ -33,9 +35,11 @@ export default function RootLayout({
         {/* Favicon */}
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
       >
+        <AnimatedBackground />
         <Navbar />
+        <EasterEgg />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-TCY8Y0LQD2"
           strategy="afterInteractive"

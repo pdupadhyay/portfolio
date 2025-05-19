@@ -102,15 +102,15 @@ const ProjectsSection = () => {
       url: "https://travel-buddy-aiagent.vercel.app",
       code: "https://github.com/pdupadhyay/TravelBuddy-Frontend",
       imageUrl: travelBuddy,
-      technologies: ["React", "Next.js", "OpenAI", "TailwindCSS", "Vercel"]
+      technologies: ["React", "FastAPI", "OpenAI"]
     },
     {
       title: "UpSkilled LMS",
-      description: "A learning management system built with React and Node.js, featuring course management and progress tracking.",
+      description: "A learning management system built with React and Java, featuring course management and progress tracking.",
       url: "https://upskilled.vercel.app",
       code: "https://github.com/pdupadhyay/UpSkilled-Frontend",
       imageUrl: upSkilled,
-      technologies: ["React", "Node.js", "MongoDB", "Express", "AWS S3"]
+      technologies: ["React", "Java", "MongoDB"]
     },
     {
       title: "SmartCam Facial Recognition",
@@ -118,7 +118,7 @@ const ProjectsSection = () => {
       url: "https://smartcam.vercel.app/",
       code: "https://github.com/pdupadhyay/smartcam-frontend",
       imageUrl: smartCam,
-      technologies: ["Python", "OpenCV", "React", "TensorFlow", "AWS"]
+      technologies: ["Python", "React", "Node.js"]
     }
   ];
 

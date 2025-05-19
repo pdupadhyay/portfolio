@@ -44,11 +44,11 @@ const SkillsSection = () => {
   const skillCategories = [
     {
       category: "Programming Languages",
-      skills: ["Python", "JavaScript", "TypeScript", "C++", "Java"]
+      skills: ["Python", "JavaScript", "TypeScript", "C++", "C#"]
     },
     {
       category: "Web Development",
-      skills: ["Angular", ".NET MVC", "Flask", "HTML/CSS", "jQuery", "Node.js", "React", "Redux", "REST APIs", "Tailwind CSS", "Vite", "Web API"]
+      skills: ["Angular", ".NET MVC", "Flask", "FastAPI", "HTML/CSS", "jQuery", "Node.js", "React", "Redux", "REST APIs", "Tailwind CSS",]
     },
     {
       category: "Cloud Technologies",
@@ -60,7 +60,7 @@ const SkillsSection = () => {
     },
     {
       category: "Data Processing",
-      skills: ["ArcGIS", "Esri Experience Builder","GeoPandas", "Geopy", "Folium", "OpenStreetMap", "Pandas", "PySpark"]
+      skills: ["Batch Processing", "ArcGIS", "Distributed Data Processing", "Horizontal Scaling", "Esri Experience Builder", "OpenStreetMap", "PySpark"]
     },
     {
       category: "Tools",
